@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --darkBlue: hsl(233, 26%, 24%);
@@ -10,79 +10,80 @@
   --white: hsl(0, 0%, 100%);
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    position: relative;
-    overflow-x: hidden;
-    font-size: 18px;
-    font-family: "Public Sans", serif;
-    background: var(--veryLightGray);
-    width: 100vw;
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Public Sans", serif;
+  background: var(--veryLightGray);
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  padding: 5px 50px;
+  z-index: 2;
+  width: 100vw;
 }
 
 .nav {
-    list-style: none;
-    display: flex;
-    gap: 30px;
+  list-style: none;
+  display: flex;
+  gap: 30px;
 }
 
-.nav a {
-    text-decoration: none;
-    color: var(--grayishBlue);
-    font-weight: 700;
+.nav li a {
+  position: relative;
+  color: var(--grayishBlue);
+}
+
+.nav li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -35px;
+    width: 0;
+    height: 4px;
+    background-color: var(--grayishBlue);
+    transform: all .5s;
 }
 
 .user-btn {
-    display: flex;
+  display: flex;
 }
 .req-btn {
-    background-color: var(--limeGreen);
-    padding: 10px 30px;
-    border-radius: 30px;
-    color: var(--white);
-    font-weight: 700;
+  background-color: var(--limeGreen);
+  padding: 10px 30px;
+  border-radius: 30px;
+  color: var(--white);
+  font-weight: 700;
 }
 
-
-@media (min-width: 375px) {
-   .dropdown-toggle {
+/* @media (min-width: 375px) {
+  .dropdown-toggle {
     display: none;
-   } 
-}
+  }
+} */
 /* @media (min-width: 1440px) {
    .req-btn{
     display: none;
    } 
 } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .footer {
   background-color: grey;
