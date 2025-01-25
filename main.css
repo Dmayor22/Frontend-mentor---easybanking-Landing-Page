@@ -20,7 +20,7 @@ body {
   /* position: relative; */
   overflow-x: hidden;
   font-family: "Public Sans", serif;
-  background: var(--veryLightGray);
+  background: var(--brightCyan);
   width: 100vw;
 }
 
@@ -111,6 +111,54 @@ header {
   background-size: cover;
 }
 
+.reason {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 50px;
+  background-color: var(--grayishBlue);
+}
+
+.reason h1 {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.Cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.features_text {
+  padding: 30px 0;
+  font-weight: 400;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 50px;
+}
+.articles h1 {
+  padding: 20px 0;
+  font-weight: 700;
+}
+.articles_list {
+  display: flex;
+  gap: 20px;
+}
+
+.article_thumbnail {
+  width: 300px;
+  height: 200px;
+  padding: 20px 0;
+}
+
+.article_body {
+  background-color: var(--white);
+}
 
 /* @media (min-width: 375px) {
   .dropdown-toggle {
