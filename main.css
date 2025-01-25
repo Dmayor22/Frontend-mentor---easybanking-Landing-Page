@@ -17,9 +17,12 @@
 }
 
 body {
+    position: relative;
+    overflow-x: hidden;
     font-size: 18px;
     font-family: "Public Sans", serif;
     background: var(--veryLightGray);
+    width: 100vw;
 }
 
 header {
@@ -35,8 +38,34 @@ header {
     gap: 30px;
 }
 
+.nav a {
+    text-decoration: none;
+    color: var(--grayishBlue);
+    font-weight: 700;
+}
+
+.user-btn {
+    display: flex;
+}
+.req-btn {
+    background-color: var(--limeGreen);
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: var(--white);
+    font-weight: 700;
+}
 
 
+@media (min-width: 375px) {
+   .dropdown-toggle {
+    display: none;
+   } 
+}
+/* @media (min-width: 1440px) {
+   .req-btn{
+    display: none;
+   } 
+} */
 
 
 
