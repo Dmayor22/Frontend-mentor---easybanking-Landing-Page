@@ -115,7 +115,7 @@ header {
   display: flex;
   flex-direction: column;
   padding: 50px 50px;
-  background-color: var(--grayishBlue);
+  background-color: var(--brightCyan);
 }
 
 .reason h1 {
