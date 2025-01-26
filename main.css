@@ -20,7 +20,7 @@ body {
   /* position: relative; */
   overflow-x: hidden;
   font-family: "Public Sans", serif;
-  background: var(--brightCyan);
+  background: var(--veryLightGray);
   width: 100vw;
 }
 
@@ -100,7 +100,7 @@ header {
 
 .left-content p {
   color: var(--grayishBlue);
-  font-size: 0.8rem;
+  font-size: 2rem;
   margin: 20px 0;
 }
 
